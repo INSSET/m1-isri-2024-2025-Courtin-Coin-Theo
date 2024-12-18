@@ -21,8 +21,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run server
-      run: npx http-server ./src
-
     - name: Run TestCafe tests
       run: npx testcafe chrome:headless tests/form-test.js
